@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklotus_7_github_io_11=self.webpackChunklotus_7_github_io_11||[]).push([[1991],{9775:o=>{o.exports=JSON.parse('{"permalink":"/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklotus_7_github_io_11=self.webpackChunklotus_7_github_io_11||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/blog/Welcome","unlisted":false}]}')}}]);
