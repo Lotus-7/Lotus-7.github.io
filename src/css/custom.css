@@ -1,65 +1,95 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* You can override the default Infima variables here. */
+/* 强制全站深色风格，覆盖 Docusaurus 默认的 Light Mode */
 :root {
-  /*--ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);*/
-  --ifm-color-primary: #b0e0e8;
-    /* Bright cyan for a futuristic, tech vibe */
-    --ifm-color-primary-dark: #00b2e6;
-    /* Slightly darker cyan */
-    --ifm-color-primary-darker: #009ac7;
-    /* Even more depth with a darker cyan */
-    --ifm-color-primary-darkest: #007b9e;
-    /* Deep dark cyan for strong accents */
-    --ifm-color-primary-light: #33eaff;
-    /* Lighter cyan for a softer look */
-    --ifm-color-primary-lighter: #66ebff;
-    /* Even lighter, almost pastel cyan */
-    --ifm-color-primary-lightest: #99ecff;
-    /* Softest cyan for subtle highlights */
-    --ifm-code-font-size: 95%;
-    /* Keep code font size moderate */
-    --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
-    /* Lighter line highlight for readability */
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #8b5cf6;
+  --ifm-color-primary-darker: #7c3aed;
+  --ifm-color-primary-darkest: #6d28d9;
+  --ifm-color-primary-light: #c4b5fd;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
+
+  --ifm-background-color: #0B0C0E; /* 强制黑色背景 */
+  --ifm-background-surface-color: #141517;
+  --ifm-navbar-background-color: rgba(11, 12, 14, 0.8);
+  --ifm-footer-background-color: #0B0C0E;
+
+  --ifm-font-color-base: #e5e7eb;
+  --ifm-heading-color: #f3f4f6;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+  --ifm-link-color: #a78bfa;
+  --ifm-link-hover-color: #c4b5fd;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* 即使在 Dark Mode 下也保持一致 */
 [data-theme='dark'] {
-  /*--ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);*/
-  --ifm-color-primary: #99a7b5;
-    /* Bright blue for high contrast and tech feel */
-    --ifm-color-primary-dark: #006ac1;
-    /* Darker shade of blue */
-    --ifm-color-primary-darker: #005a9e;
-    /* Even darker blue for depth */
-    --ifm-color-primary-darkest: #004680;
-    /* Darkest blue for strong dark mode accents */
-    --ifm-color-primary-light: #3399ff;
-    /* Light blue for softer dark mode accents */
-    --ifm-color-primary-lighter: #66b3ff;
-    /* Softer light blue */
-    --ifm-color-primary-lightest: #99ccff;
-    /* Very soft blue, almost pastel */
-    --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
-    /* Enhanced line highlight for better readability in dark mode */
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #8b5cf6;
+  --ifm-color-primary-darker: #7c3aed;
+  --ifm-color-primary-darkest: #6d28d9;
+  --ifm-color-primary-light: #c4b5fd;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
 
+  --ifm-background-color: #0B0C0E;
+  --ifm-background-surface-color: #141517;
+  --ifm-navbar-background-color: rgba(11, 12, 14, 0.8);
+  --ifm-footer-background-color: #0B0C0E;
+
+  --ifm-font-color-base: #e5e7eb;
+  --ifm-heading-color: #f3f4f6;
+}
+
+/* Global Styles */
+body {
+  @apply antialiased text-slate-200 bg-[#0B0C0E];
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar Tweaks */
+.navbar {
+  @apply backdrop-blur-md border-b border-white/5 shadow-none;
+}
+
+.navbar__title {
+  @apply font-bold tracking-tight text-white;
+}
+
+.navbar__link {
+  @apply text-slate-400 font-medium transition-colors;
+}
+
+.navbar__link:hover, .navbar__link--active {
+  @apply text-white;
+}
+
+/* Card Styles Override */
+.card {
+  @apply bg-[#141517] border border-white/5 rounded-xl shadow-none transition-all duration-200;
+}
+
+/* Typography Tweaks */
+h1, h2, h3, h4, h5, h6 {
+  @apply tracking-tight font-semibold text-white;
+}
+
+/* 自定义动画 */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 300%;
+  animation: gradient 8s ease infinite;
+}
+
+/* 隐藏 Docusaurus 的浅色/深色切换按钮，因为我们强制深色 */
+.clean-btn.toggleButton_gllP {
+  display: none !important;
 }

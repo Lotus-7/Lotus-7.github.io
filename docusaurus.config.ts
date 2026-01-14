@@ -3,48 +3,33 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Home',
-  tagline: '',
+  title: 'Lotus-7',
+  tagline: 'AI Design Engineer',
   favicon: 'img/favicon.ico',
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://lotus-7.github.io',
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  organizationName: 'Lotus-7',
+  projectName: 'Lotus-7.github.io',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false, // Disable docs for now as we focus on custom pages
         blog: {
-          showReadingTime: false,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: 'thinking', // Rename blog to thinking
+          showReadingTime: true,
+          blogTitle: '想法与洞察',
+          blogDescription: '关于 AI、产品与设计的胡思乱想',
+          postsPerPage: 5,
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: '所有文章',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -54,65 +39,47 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true, // 强制深色模式，保持设计风格统一
+      respectPrefersColorScheme: false,
+    },
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: '7.',
+      title: 'Lotus-7',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Lotus-7 Logo',
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/Lotus-7',
-          label: 'GitHub',
-          position: 'right',
-        },
+        {to: '/projects', label: 'Home', position: 'right'},
+        {to: '/tools', label: 'Tools', position: 'right'},
+        {to: '/thinking', label: 'Thinking', position: 'right'},
+        {to: '/about', label: 'About', position: 'right'},
+        {href: 'mailto:contact@lotus-7.com', label: 'Contact', position: 'right'},
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Explore',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
+            { label: '作品集', to: '/projects' },
+            { label: '小工具', to: '/tools' },
+            { label: '碎碎念', to: '/thinking' },
           ],
         },
         {
-          title: 'Community',
+          title: 'Link',
           items: [
-            {
-              label: 'V2EX',
-              href: 'https://www.v2ex.com/',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.com/',
-            }
-          ],
-        },
-        {
-          title: 'Journal',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            }
+            { label: 'GitHub', href: 'https://github.com/Lotus-7' },
+            /*{ label: 'Twitter', href: 'https://twitter.com/Lotus-7' },*/
+            { label: 'Email', href: 'mailto:contact@lotus-7.com' },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Lotus-7 Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Lotus-7.`,
     },
     prism: {
       theme: prismThemes.github,
