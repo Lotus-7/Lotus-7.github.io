@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklotus_7_github_io_11=globalThis.webpackChunklotus_7_github_io_11||[]).push([[79],{6876:t=>{t.exports=JSON.parse('{"label":"product","permalink":"/thinking/tags/product","allTagsPath":"/thinking/tags","count":1,"unlisted":false}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklotus_7_github_io_11=globalThis.webpackChunklotus_7_github_io_11||[]).push([[731],{6290:i=>{i.exports=JSON.parse('{"label":"engineering","permalink":"/thinking/tags/engineering","allTagsPath":"/thinking/tags","count":1,"unlisted":false}')}}]);

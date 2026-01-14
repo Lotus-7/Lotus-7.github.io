@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklotus_7_github_io_11=globalThis.webpackChunklotus_7_github_io_11||[]).push([[349],{9482:a=>{a.exports=JSON.parse('{"label":"ai","permalink":"/thinking/tags/ai","allTagsPath":"/thinking/tags","count":1,"unlisted":false}')}}]);
