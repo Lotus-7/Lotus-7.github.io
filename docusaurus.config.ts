@@ -52,7 +52,7 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/projects', label: 'Home', position: 'right'},
+        {to: '/projects', label: 'Projects', position: 'right'},
         {to: '/tools', label: 'Tools', position: 'right'},
         {to: '/thinking', label: 'Thinking', position: 'right'},
         {to: '/about', label: 'About', position: 'right'},
