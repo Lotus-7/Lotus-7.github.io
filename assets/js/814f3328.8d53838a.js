@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklotus_7_github_io_11=globalThis.webpackChunklotus_7_github_io_11||[]).push([[472],{5513:i=>{i.exports=JSON.parse('{"title":"\u6240\u6709\u6587\u7ae0","items":[{"title":"\u7ec8\u4e8e\u628a Skill \u548c MCP \u60f3\u660e\u767d\u4e86","permalink":"/thinking/thinking Skill and MCP","unlisted":false}]}')}}]);
