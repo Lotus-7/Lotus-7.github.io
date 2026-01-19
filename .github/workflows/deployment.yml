@@ -3,18 +3,22 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # 你的默认分支，可能是 main 或 master
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Setup Node
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
-        node-version: '18'  # 可以根据需要选择不同的 Node.js 版本
+        node-version: '18'
 
     - name: Install and Build
       run: |
@@ -24,6 +28,6 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages  # 部署到 gh-pages 分支
-        folder: build     # Docusaurus 构建产物所在目录
-        token: ${{ secrets.ACTIONS_TOKEN }}  # 使用 GITHUB_TOKEN 进行部署
+        branch: gh-pages
+        folder: build
+        token: ${{ secrets.GITHUB_TOKEN }}

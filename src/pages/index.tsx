@@ -72,7 +72,7 @@ const StarField = () => {
 
 // --- 趣味像素小怪兽 ---
 const PixelMonster = () => (
-  <div className="w-12 h-12 mb-6 text-purple-500 animate-bounce cursor-pointer hover:text-purple-400 transition-colors">
+  <div className="w-12 h-12 text-purple-500 animate-bounce cursor-pointer hover:text-purple-400 transition-colors">
     <svg viewBox="0 0 24 24" fill="currentColor" shapeRendering="crispEdges">
       <path d="M4 2h16v2H4zM2 4h20v2H2zM2 6h2v12H2zM20 6h2v12h-2zM4 18h16v2H4zM2 20h20v2H2zM6 8h4v4H6zM14 8h4v4h-4zM8 10h2v2H8zM16 10h2v2h-2z"/>
     </svg>
