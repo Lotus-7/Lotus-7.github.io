@@ -4,6 +4,23 @@ import Link from '@docusaurus/Link';
 
 const PROJECTS = [
   {
+    title: "AI 聊天群",
+    role: "AI 工程师",
+    timeline: "2026",
+    problem: "有时候想和群里的小伙伴分享一些有趣的事情，但是大家都在忙，得不到回应。",
+    solution: "开发一个 AI 聊天群，自定义不同性格角色的 Agent, 让他们按照不同的角色和性格进行回复，让你在群中分享消息时得到及时的回应，并且可以和不同的角色进行对话，体验不同的角色和性格给你带来新的灵感。",
+    designPoints: [
+      "创建聊天群",
+      "创建聊天角色",
+      "选择自己偏好的模型"
+    ],
+    value: "用于娱乐",
+    links: {
+      demo: "https://traemulti-agent-chato2l8.vercel.app",
+      github: "https://github.com/Lotus-7/multi-agent-chat"
+    }
+  },
+  {
     title: "销售复盘工具",
     role: "AI 工程师",
     timeline: "2025",

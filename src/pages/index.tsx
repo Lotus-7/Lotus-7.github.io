@@ -215,7 +215,7 @@ export default function Home(): JSX.Element {
             <Link
               to="mailto:contact@lotus-7.com"
               className="inline-block px-10 py-5 rounded-full bg-white text-black font-bold text-xl hover:scale-110 hover:rotate-2 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-              发个信号 📶
+              发个信号
             </Link>
           </div>
         </section>
