@@ -4,8 +4,26 @@ import Link from '@docusaurus/Link';
 
 const PROJECTS = [
   {
+    title: "自媒体工具",
+    role: "AI 产品工程师",
+    timeline: "2026",
+    problem: "新手自媒体创作者不知道如何定位自己的账号，也不知道如何创作内容，导致账号没有流量，创作动力不足。",
+    solution: "开发一个自媒体工具，帮助新手自媒体创作者定位自己的账号，并分享对标博主的账号内容快速学习，使用 AI 快速创作内容，验证市场。",
+    designPoints: [
+      "账号定位",
+      "账号拆解",
+      "内容规划",
+      "账号复盘"
+    ],
+    value: "用于自媒体创作者",
+    links: {
+      demo: "https://traecreator-flow5gcw.vercel.app/",
+      github: "https://github.com/Lotus-7/creator-flow"
+    }
+  },
+  {
     title: "AI 聊天群",
-    role: "AI 工程师",
+    role: "AI 产品工程师",
     timeline: "2026",
     problem: "有时候想和群里的小伙伴分享一些有趣的事情，但是大家都在忙，得不到回应。",
     solution: "开发一个 AI 聊天群，自定义不同性格角色的 Agent, 让他们按照不同的角色和性格进行回复，让你在群中分享消息时得到及时的回应，并且可以和不同的角色进行对话，体验不同的角色和性格给你带来新的灵感。",
@@ -14,7 +32,7 @@ const PROJECTS = [
       "创建聊天角色",
       "选择自己偏好的模型"
     ],
-    value: "用于娱乐",
+    value: "提供情绪价值",
     links: {
       demo: "https://traemulti-agent-chato2l8.vercel.app",
       github: "https://github.com/Lotus-7/multi-agent-chat"
@@ -40,7 +58,7 @@ const PROJECTS = [
   {
     title: "风格模版写作助手",
     role: "AI 工程师",
-    timeline: "2023",
+    timeline: "2025",
     problem: "普通人不知道如何写提示词让 AI 写作更符合自己的风格，导致生成的文章风格不统一。",
     solution: "用户只需要上传往期的文稿内容分析出风格特征，保存成风格卡片，下次用户输入主题即可按照用户的个人风格去仿写",
     designPoints: [

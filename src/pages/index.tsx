@@ -93,9 +93,9 @@ function Hero() {
           </div>
 
           <h1 className="text-6xl md:text-8xl font-bold tracking-tighter text-white leading-none">
-            构建 <br/>
+            快速 <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-400 animate-gradient bg-300%">
-              有灵魂的产品
+              复现大脑里的想法
             </span>
           </h1>
 
