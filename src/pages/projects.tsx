@@ -56,7 +56,7 @@ const PROJECTS = [
     }
   },
   {
-    title: "风格模版写作助手",
+    title: "风格卡片写作助手",
     role: "AI 工程师",
     timeline: "2025",
     problem: "普通人不知道如何写提示词让 AI 写作更符合自己的风格，导致生成的文章风格不统一。",
@@ -66,10 +66,10 @@ const PROJECTS = [
       "AI 自动分析出风格特征",
       "用户可以保存风格卡片，并创作新的文案"
     ],
-    value: "用于个人写公众号",
+    value: "用于写公众号",
     links: {
-      demo: "#",
-      github: "#"
+      demo: "https://traestyle-writing3d6n.vercel.app/",
+      github: "https://github.com/Lotus-7/style-writing"
     }
   }
 ];
