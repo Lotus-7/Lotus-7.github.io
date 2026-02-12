@@ -9,45 +9,34 @@ export default function About(): JSX.Element {
       <main className="bg-[#0B0C0E] min-h-screen py-24 text-slate-300">
         <div className="container mx-auto px-4 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 tracking-tight leading-tight">
-            AI 时代的 <br/>
-            <span className="text-slate-500">野生设计工程师</span>
+            一个被 AI 工具"惯坏了"的 <br/>
+            <span className="text-slate-500">想法实践者</span>
           </h1>
 
           <div className="prose prose-lg prose-invert max-w-none">
             <p className="text-xl leading-relaxed text-slate-300 mb-8 font-light">
-              你好，我是 Lotus-7，一个试图模糊“设计”和“开发”边界的家伙
+              你好，我是小 7，怎么说呢...我现在就是那种脑子里冒出个想法，立马就想把它变成现实的那种人。
             </p>
 
             <p className="leading-relaxed">
-              在这个 AI 像魔法一样爆发的年代，我坚信最好的产品人必须同时懂得<strong>如何画出梦想</strong>（设计）以及<strong>如何实现魔法</strong>（工程）。
-              我不想只做一个画图的，也不想只做一个写接口的。我想做那个把魔法封装成按钮的人。
+              以前吧，脑子里有个点子，可能还得先学三个月编程，最后想法早就凉透了。但现在有了 AI 编程工具，每天蹦出来的 idea，恨不得马上就能跑起来。
             </p>
 
             <hr className="my-12 border-white/10" />
 
-            <h3 className="text-2xl font-bold text-white mb-6">我现在沉迷什么？</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">享受创造的乐趣</h3>
             <p>
-              目前，我完全沉迷于 <strong>Local-First AI（本地优先的 AI）</strong>。
-              我相信未来的软件应该是私密的、极速的，而且是完全属于用户的。
-              我们正在从“租用软件”的 SaaS 时代，回归到“拥有工具”的工匠时代。
+              AI 工具就像给我配了个超级助手，我只需要把想法描述清楚，它就能帮我把基础工作搞定。虽然有时候它也会理解错意思，整出些南辕北辙的东西，但重要的是——它让我从"想法收集者"变成了"想法实践者"
             </p>
             <p>
-              我的日常就是在研究怎么把复杂的 LLM 推理过程，塞进一个简单到连我奶奶都会用的界面里。
-              这很难，但如果不难，还要我干嘛呢？
+              现在这种状态挺爽的：有想法就去做，不行就推倒重来，反正成本也不高。这种快速迭代的感觉，让我好像又回到了小时候搭乐高的时候，纯粹地享受创造的乐趣。
             </p>
 
-            <h3 className="text-2xl font-bold text-white mt-12 mb-6">为什么走这条路？</h3>
+            <h3 className="text-2xl font-bold text-white mt-12 mb-6">所以，这就是我</h3>
             <p>
-              现在有了 AI，我发现我们拥有了一种全新的原材料——它既像粘土一样可塑，又像顽童一样不可控。
-              驯服这种不确定性，是这个十年最性感的设计挑战。
+              一个被AI工具"惯坏了"的折腾爱好者。如果你也是那种脑子里总有奇奇怪怪想法的人，咱们可以多交流交流。毕竟这年头，光想不做的人太多了，能一起折腾的朋友，可太珍贵了。
             </p>
 
-            <h3 className="text-2xl font-bold text-white mt-12 mb-6">交个朋友？</h3>
-            <p>
-              我喜欢和那些在乎细节、但也懂得什么时候该妥协发布的小团队合作。
-              如果你正在造一些给创造者用的工具，或者只是想吐槽现在的 AI 产品有多难用，
-              欢迎随时找我。
-            </p>
           </div>
         </div>
       </main>
