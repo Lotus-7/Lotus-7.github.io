@@ -49,10 +49,10 @@ const PROJECTS = [
       "话术知识库",
       "销售开单失败复盘"
     ],
-    value: "目前公司的销售部已经在使用",
+    value: "销售经验学习工具",
     links: {
-      demo: "#",
-      github: "#"
+      demo: "https://sales-tool-weld.vercel.app",
+      github: "https://github.com/Lotus-7/sales-tool.git"
     }
   },
   {
